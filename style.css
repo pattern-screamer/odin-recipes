@@ -3,3 +3,97 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  background-color: #CFCBCA;
+  color: white;
+  font-family: Arial, sans-serif, system-ui;
+}
+
+.background-left,
+.background-right {
+  position: fixed;
+}
+
+.background-left {
+  content: url("./images/boymoder.png");
+  left: 80px;
+  bottom: 200px;
+  transform: scale(-1.75, 1.75);
+}
+
+.background-right {
+  content: url("./images/girlmoder.png");
+  right: 40px;
+  bottom: 190px;
+  transform: scale(1.75, 1.75);
+}
+
+.content {
+  background-color: #627264;
+  height: 100vh;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.subject {
+  font-size: 64px;
+  padding: 32px 16px 128px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif, system-ui;
+}
+
+.subject > span {
+  display: inline-block;
+}
+
+.subject > span::first-letter {
+  color: #F74020;
+}
+
+.navigation {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navigation > h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.link-list {
+  list-style: none;
+}
+
+.link-list > li {
+  margin-bottom: 8px;
+}
+
+.link-list > li:last-child {
+  margin-bottom: 0;
+}
+
+.link-list > li > a {
+  color: black;
+  display: block;
+  padding: 16px;
+  font-family: Helvetica, Arial, sans-serif, system-ui;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #CFCBCA;
+}
+
+.link-list > li > a:hover {
+  border: 4px solid #CFCBCA;
+  padding: 12px;
+  color: white;
+  background-color: #F74020;
+}
+
+.link-list > li > a:hover::before {
+  position: absolute;
+  content: url("./images/k-on-mugi-pointing.png");
+  transform: scale(-.5, .5) translate(130%, -100%);
+  pointer-events: none;
+}
