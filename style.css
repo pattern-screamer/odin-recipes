@@ -36,6 +36,12 @@ body {
   margin: 0 auto;
 }
 
+.recipe-content {
+  height: auto;
+  width: 75%;
+  min-width: 564px;
+}
+
 .subject {
   font-size: 64px;
   padding: 32px 16px;
@@ -80,7 +86,8 @@ body {
   margin-bottom: 0;
 }
 
-.link-list > li > a {
+.link-list > li > a,
+.standalone-link {
   color: black;
   display: block;
   padding: 16px;
@@ -90,16 +97,30 @@ body {
   background-color: #CFCBCA;
 }
 
-.link-list > li > a:hover {
+.link-list > li > a:hover,
+.standalone-link:hover {
   border: 4px solid #CFCBCA;
   padding: 12px;
   color: white;
   background-color: #F74020;
 }
 
-.link-list > li > a:hover::before {
+.link-list > li > a:hover::before,
+.standalone-link:hover::before {
   position: absolute;
   content: url("./images/k-on-mugi-pointing.png");
   transform: scale(-.5, .5) translate(130%, -100%);
   pointer-events: none;
+}
+
+.image-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 16px;
+  place-items: center;
+  padding: 32px;
+}
+
+.image-showcase > div {
+  width: fit-content;
 }
