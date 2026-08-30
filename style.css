@@ -8,6 +8,7 @@ body {
   background-color: #CFCBCA;
   color: white;
   font-family: Arial, sans-serif, system-ui;
+  font-size: 20px;
 }
 
 .background-left,
@@ -92,7 +93,6 @@ body {
   display: block;
   padding: 16px;
   font-family: Helvetica, Arial, sans-serif, system-ui;
-  font-size: 20px;
   text-decoration: none;
   background-color: #CFCBCA;
 }
@@ -123,4 +123,68 @@ body {
 
 .image-showcase > div {
   width: fit-content;
+}
+
+.visual-paragraph-header {
+  background-color: #CFCBCA;
+  width: max-content;
+  padding: 8px;
+  margin: 16px auto;
+}
+
+.visual-paragraph-header > h2 {
+  color: black;
+  font-size: 48px;
+  text-align: center;
+}
+
+.visual-paragraph-header > img {
+  display: block;
+}
+
+.section-content {
+  padding-bottom: 64px;
+  font-size: 24px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.section-content > p {
+  text-align: center;
+}
+
+.section-content > ul {
+  list-style: none;
+}
+
+.section-content > ul > li,
+.section-content > ol > li {
+  padding-bottom: 8px;
+}
+
+.recipe-credit {
+  text-align: center;
+  padding: 32px;
+}
+
+.recipe-credit-link {
+  color: black;
+  padding: 8px;
+  font-family: Helvetica, Arial, sans-serif, system-ui;
+  text-decoration: none;
+  background-color: #CFCBCA;
+}
+
+.recipe-credit-link:hover {
+  border: 4px solid #CFCBCA;
+  padding: 4px;
+  color: white;
+  background-color: #F74020;
+}
+
+.recipe-credit-link:hover::before {
+  position: absolute;
+  content: url("./images/k-on-mugi-pointing.png");
+  transform: scale(.50, .50) rotate(-90deg) translate(105%, 85%);
+  pointer-events: none;
 }
