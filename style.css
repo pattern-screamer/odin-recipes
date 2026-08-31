@@ -12,7 +12,9 @@ body {
 }
 
 .background-left,
-.background-right {
+.background-right,
+.background-left-gothfield,
+.background-right-gothskunk {
   position: fixed;
 }
 
@@ -28,6 +30,20 @@ body {
   right: 40px;
   bottom: 190px;
   transform: scale(1.75, 1.75);
+}
+
+.background-left-gothfield {
+  content: url("./images/gothfield.png");
+  left: 20px;
+  bottom: 35px;
+  transform: scale(-1.1, 1.1);
+}
+
+.background-right-gothskunk {
+  content: url("./images/gothskunk.png");
+  right: -310px;
+  bottom: -145px;
+  transform: scale(.78, .78);
 }
 
 .content {
@@ -165,13 +181,26 @@ body {
   padding-bottom: 8px;
 }
 
-.recipe-credit {
+.ingredients-list > li+li::before {
+  display: inline-block;
+  content: url("./images/salt-bae.jpg");
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+}
+
+.recipe-credits {
   text-align: center;
   padding: 32px;
 }
 
+.recipe-credits > p + p {
+  padding-top: 12px;
+}
+
 .recipe-credit-link,
 .recipe-desc-link {
+  display: inline-block;
   color: black;
   padding: 8px;
   font-family: Helvetica, Arial, sans-serif, system-ui;
