@@ -106,7 +106,8 @@ body {
 }
 
 .link-list > li > a:hover::before,
-.standalone-link:hover::before {
+.standalone-link:hover::before,
+.recipe-desc-link:hover::before {
   position: absolute;
   content: url("./images/k-on-mugi-pointing.png");
   transform: scale(-.5, .5) translate(130%, -100%);
@@ -167,7 +168,8 @@ body {
   padding: 32px;
 }
 
-.recipe-credit-link {
+.recipe-credit-link,
+.recipe-desc-link {
   color: black;
   padding: 8px;
   font-family: Helvetica, Arial, sans-serif, system-ui;
@@ -175,16 +177,17 @@ body {
   background-color: #CFCBCA;
 }
 
-.recipe-credit-link:hover {
+.recipe-credit-link:hover,
+.recipe-desc-link:hover {
   border: 4px solid #CFCBCA;
   padding: 4px;
   color: white;
   background-color: #F74020;
 }
 
-.recipe-credit-link:hover::before {
+.recipe-credit-link:hover::after {
   position: absolute;
   content: url("./images/k-on-mugi-pointing.png");
-  transform: scale(.50, .50) rotate(-90deg) translate(105%, 85%);
+  transform: scale(.50, .50) rotate(-90deg) translate(102.5%, -150%);
   pointer-events: none;
 }
